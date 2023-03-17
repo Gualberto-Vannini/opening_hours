@@ -28,6 +28,7 @@ This project aims to recreate a working structure consuming APIs and creating an
 - [styled-system](https://styled-system.com) quickly build custom UI.
 - [react-native-safe-area-context](https://github.com/th3rdwave/react-native-safe-area-context)flexible way to handle safe area.
 - [react-native-rename](https://github.com/junedomingo/react-native-rename)rename easily the project.
+- [react-native-svg](https://github.com/software-mansion/react-native-svg) svg for tab bar icons.
 - [jest](https://facebook.github.io/jest/) for testing.
 
 ## Folder structure

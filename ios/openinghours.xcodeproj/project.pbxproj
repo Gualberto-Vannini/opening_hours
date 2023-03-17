@@ -8,15 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		00E356F31AD99517003FC87E /* openinghoursTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* openinghoursTests.m */; };
+		06FF66E58E2C54AEA3C33EE1 /* libPods-openinghours.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CD3F891F6D424AAA0118E13 /* libPods-openinghours.a */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		2C8D86AB29C208FE0014CBB4 /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2C8D86A829C208FE0014CBB4 /* Roboto-Bold.ttf */; };
 		2C8D86AC29C208FE0014CBB4 /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2C8D86A929C208FE0014CBB4 /* Roboto-Regular.ttf */; };
 		2C8D86AD29C208FE0014CBB4 /* Roboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2C8D86AA29C208FE0014CBB4 /* Roboto-Medium.ttf */; };
-		78AF1A87B9843AA882C35891 /* libPods-openinghours-openinghoursTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 71BAE01F4FE82EB4108EB18D /* libPods-openinghours-openinghoursTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
-		C5E0DF1DB9F98C38DEB5DB35 /* libPods-openinghours.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DAC60286F7119FCFFDB516D7 /* libPods-openinghours.a */; };
+		F7C6F365F290AC8607A7B6A9 /* libPods-openinghours-openinghoursTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 35B576D2BDE0E48A0EBE4DCC /* libPods-openinghours-openinghoursTests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,7 +33,7 @@
 		00E356EE1AD99517003FC87E /* openinghoursTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = openinghoursTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* openinghoursTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = openinghoursTests.m; sourceTree = "<group>"; };
-		0900158A3090EFFF58739E4F /* Pods-openinghours-openinghoursTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-openinghours-openinghoursTests.debug.xcconfig"; path = "Target Support Files/Pods-openinghours-openinghoursTests/Pods-openinghours-openinghoursTests.debug.xcconfig"; sourceTree = "<group>"; };
+		0D3F74CB81A73A3AD39E715D /* Pods-openinghours-openinghoursTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-openinghours-openinghoursTests.release.xcconfig"; path = "Target Support Files/Pods-openinghours-openinghoursTests/Pods-openinghours-openinghoursTests.release.xcconfig"; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* openinghours.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = openinghours.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = openinghours/AppDelegate.h; sourceTree = "<group>"; };
 		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = openinghours/AppDelegate.m; sourceTree = "<group>"; };
@@ -43,13 +43,13 @@
 		2C8D86A829C208FE0014CBB4 /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Roboto-Bold.ttf"; path = "../assets/fonts/Roboto-Bold.ttf"; sourceTree = "<group>"; };
 		2C8D86A929C208FE0014CBB4 /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Roboto-Regular.ttf"; path = "../assets/fonts/Roboto-Regular.ttf"; sourceTree = "<group>"; };
 		2C8D86AA29C208FE0014CBB4 /* Roboto-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Roboto-Medium.ttf"; path = "../assets/fonts/Roboto-Medium.ttf"; sourceTree = "<group>"; };
-		71BAE01F4FE82EB4108EB18D /* libPods-openinghours-openinghoursTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-openinghours-openinghoursTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2CD3F891F6D424AAA0118E13 /* libPods-openinghours.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-openinghours.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		35B576D2BDE0E48A0EBE4DCC /* libPods-openinghours-openinghoursTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-openinghours-openinghoursTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		60D98AA49C61BD67F50FE6B4 /* Pods-openinghours.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-openinghours.debug.xcconfig"; path = "Target Support Files/Pods-openinghours/Pods-openinghours.debug.xcconfig"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = openinghours/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		85CB1D8E72C5C560B072F4BF /* Pods-openinghours.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-openinghours.debug.xcconfig"; path = "Target Support Files/Pods-openinghours/Pods-openinghours.debug.xcconfig"; sourceTree = "<group>"; };
-		A69172AB989501084EE183DE /* Pods-openinghours.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-openinghours.release.xcconfig"; path = "Target Support Files/Pods-openinghours/Pods-openinghours.release.xcconfig"; sourceTree = "<group>"; };
-		DAC60286F7119FCFFDB516D7 /* libPods-openinghours.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-openinghours.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		E0E0AF8A3FE537E650AD71BB /* Pods-openinghours-openinghoursTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-openinghours-openinghoursTests.release.xcconfig"; path = "Target Support Files/Pods-openinghours-openinghoursTests/Pods-openinghours-openinghoursTests.release.xcconfig"; sourceTree = "<group>"; };
+		AA591EEA938E6FE7E6B6E6F2 /* Pods-openinghours.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-openinghours.release.xcconfig"; path = "Target Support Files/Pods-openinghours/Pods-openinghours.release.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		EE2C40A3858357A9B8DDE575 /* Pods-openinghours-openinghoursTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-openinghours-openinghoursTests.debug.xcconfig"; path = "Target Support Files/Pods-openinghours-openinghoursTests/Pods-openinghours-openinghoursTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				78AF1A87B9843AA882C35891 /* libPods-openinghours-openinghoursTests.a in Frameworks */,
+				F7C6F365F290AC8607A7B6A9 /* libPods-openinghours-openinghoursTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,7 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C5E0DF1DB9F98C38DEB5DB35 /* libPods-openinghours.a in Frameworks */,
+				06FF66E58E2C54AEA3C33EE1 /* libPods-openinghours.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -106,8 +106,8 @@
 			isa = PBXGroup;
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
-				DAC60286F7119FCFFDB516D7 /* libPods-openinghours.a */,
-				71BAE01F4FE82EB4108EB18D /* libPods-openinghours-openinghoursTests.a */,
+				2CD3F891F6D424AAA0118E13 /* libPods-openinghours.a */,
+				35B576D2BDE0E48A0EBE4DCC /* libPods-openinghours-openinghoursTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -157,10 +157,10 @@
 		E233CBF5F47BEE60B243DCF8 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				85CB1D8E72C5C560B072F4BF /* Pods-openinghours.debug.xcconfig */,
-				A69172AB989501084EE183DE /* Pods-openinghours.release.xcconfig */,
-				0900158A3090EFFF58739E4F /* Pods-openinghours-openinghoursTests.debug.xcconfig */,
-				E0E0AF8A3FE537E650AD71BB /* Pods-openinghours-openinghoursTests.release.xcconfig */,
+				60D98AA49C61BD67F50FE6B4 /* Pods-openinghours.debug.xcconfig */,
+				AA591EEA938E6FE7E6B6E6F2 /* Pods-openinghours.release.xcconfig */,
+				EE2C40A3858357A9B8DDE575 /* Pods-openinghours-openinghoursTests.debug.xcconfig */,
+				0D3F74CB81A73A3AD39E715D /* Pods-openinghours-openinghoursTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -172,11 +172,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "openinghoursTests" */;
 			buildPhases = (
-				58A571B9243924BB79ED004B /* [CP] Check Pods Manifest.lock */,
+				9E78335653FC7E47E9627F2F /* [CP] Check Pods Manifest.lock */,
 				00E356EA1AD99517003FC87E /* Sources */,
 				00E356EB1AD99517003FC87E /* Frameworks */,
 				00E356EC1AD99517003FC87E /* Resources */,
-				C09F610D2BE8AD4897C3AF83 /* [CP] Copy Pods Resources */,
+				97C987F44E641FAF85019652 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -192,13 +192,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "openinghours" */;
 			buildPhases = (
-				A2940BA7E148D6BD6E2AC3E4 /* [CP] Check Pods Manifest.lock */,
+				1D1C22670053137A0CD1F845 /* [CP] Check Pods Manifest.lock */,
 				FD10A7F022414F080027D42C /* Start Packager */,
 				13B07F871A680F5B00A75B9A /* Sources */,
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
-				EFC340BEFE0588F679729BAA /* [CP] Copy Pods Resources */,
+				376A7F2727FD0000AD76A04D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -282,29 +282,7 @@
 			shellPath = /bin/sh;
 			shellScript = "export BUNDLE_COMMAND=\"ram-bundle\"\nexport NODE_BINARY=\"node ../node_modules/react-native/scripts/react-native-xcode.sh\"\n";
 		};
-		58A571B9243924BB79ED004B /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-openinghours-openinghoursTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		A2940BA7E148D6BD6E2AC3E4 /* [CP] Check Pods Manifest.lock */ = {
+		1D1C22670053137A0CD1F845 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -326,7 +304,24 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		C09F610D2BE8AD4897C3AF83 /* [CP] Copy Pods Resources */ = {
+		376A7F2727FD0000AD76A04D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-openinghours/Pods-openinghours-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-openinghours/Pods-openinghours-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-openinghours/Pods-openinghours-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		97C987F44E641FAF85019652 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -343,21 +338,26 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-openinghours-openinghoursTests/Pods-openinghours-openinghoursTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		EFC340BEFE0588F679729BAA /* [CP] Copy Pods Resources */ = {
+		9E78335653FC7E47E9627F2F /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-openinghours/Pods-openinghours-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
-			name = "[CP] Copy Pods Resources";
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-openinghours/Pods-openinghours-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-openinghours-openinghoursTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-openinghours/Pods-openinghours-resources.sh\"\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		FD10A7F022414F080027D42C /* Start Packager */ = {
@@ -412,7 +412,7 @@
 /* Begin XCBuildConfiguration section */
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0900158A3090EFFF58739E4F /* Pods-openinghours-openinghoursTests.debug.xcconfig */;
+			baseConfigurationReference = EE2C40A3858357A9B8DDE575 /* Pods-openinghours-openinghoursTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -439,7 +439,7 @@
 		};
 		00E356F71AD99517003FC87E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E0E0AF8A3FE537E650AD71BB /* Pods-openinghours-openinghoursTests.release.xcconfig */;
+			baseConfigurationReference = 0D3F74CB81A73A3AD39E715D /* Pods-openinghours-openinghoursTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
@@ -463,7 +463,7 @@
 		};
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 85CB1D8E72C5C560B072F4BF /* Pods-openinghours.debug.xcconfig */;
+			baseConfigurationReference = 60D98AA49C61BD67F50FE6B4 /* Pods-openinghours.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -497,7 +497,7 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A69172AB989501084EE183DE /* Pods-openinghours.release.xcconfig */;
+			baseConfigurationReference = AA591EEA938E6FE7E6B6E6F2 /* Pods-openinghours.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;

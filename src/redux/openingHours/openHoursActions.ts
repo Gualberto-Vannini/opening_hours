@@ -47,7 +47,6 @@ export const loadOpeningHours = createAsyncThunk(
     });
 
     // Return the updated schedule
-    console.log(orderedSchedule, 'ecco le api finite');
     return orderedSchedule;
   },
 );

@@ -1,6 +1,11 @@
 # OPENING HOURS
 This project aims to recreate a working structure consuming APIs and creating an opening hours card schedule.
 
+| Iphone 14 Pro | Android Galaxy A10s |
+| --- | --- |
+| <img src="https://user-images.githubusercontent.com/22340454/225926108-07da3906-a9c9-4f28-873c-7278b63ca77d.png" width="200"> | <img src="https://user-images.githubusercontent.com/22340454/225926204-56f80e07-e7ee-4723-b4ce-657efc6edeb0.jpg" width="200">
+
+
 ## Pre requisites
 - [Node.js > 14](https://nodejs.org) and yarn (Recommended: Use [yarn](https://classic.yarnpkg.com/lang/en/docs/install/#mac-stable))
 - [Watchman](https://facebook.github.io/watchman)

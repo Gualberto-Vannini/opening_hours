@@ -9,7 +9,8 @@ import useActions from '../../hooks/useActions';
 import styled from 'styled-components/native';
 
 const StyledSafeAreaView = styled(SafeAreaView)`
-  margin: ${({theme}) => theme.space.xl};
+  align-items: center;
+  justify-content: center;
   flex: 1;
 `;
 

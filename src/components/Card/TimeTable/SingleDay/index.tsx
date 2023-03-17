@@ -9,7 +9,7 @@ import {
 } from '../../../TextContent/';
 import useCurrentDay from '../../../../hooks/useCurrentDay';
 import {DaySchedule} from '../../../../api/OpeningHoursApi/OpeningHoursTypes';
-import {formatOpeningHours} from '../../../../utils/helpers/formattedHoursHelper';
+import {formatOpeningHours} from '../../../../utils/helpers/formatDateHelper';
 interface HeaderTitleProps {
   day: string;
   openingHours: DaySchedule[] | [];

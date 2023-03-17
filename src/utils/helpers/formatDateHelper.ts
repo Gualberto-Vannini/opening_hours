@@ -1,4 +1,7 @@
-import {DaySchedule} from '../../api/OpeningHoursApi/OpeningHoursTypes';
+import {
+  DaySchedule,
+  ScheduleState,
+} from '../../api/OpeningHoursApi/OpeningHoursTypes';
 
 // convert millisec like 36000 to 10 AM
 const convertDate12Clock = (inputValue: number): string => {
@@ -55,4 +58,36 @@ export function formatOpeningHours(openingHours: DaySchedule[]): string {
     .join(', ');
 
   return formattedOpeningHours;
+}
+
+export function reorderDays(newSchedule: ScheduleState): ScheduleState {
+  const orderedSchedule: ScheduleState = {
+    monday: [],
+    tuesday: [],
+    wednesday: [],
+    thursday: [],
+    friday: [],
+    saturday: [],
+    sunday: [],
+    ...newSchedule,
+  };
+
+  // Loop through the days of the week to be sure of the week's order of the item
+  Object.keys(orderedSchedule).forEach(day => {
+    const daySchedule = orderedSchedule[day];
+    const nextDay =
+      Object.keys(orderedSchedule)[
+        (Object.keys(orderedSchedule).indexOf(day) + 1) % 7 //%7 ensures that the result is always between 0 and 6.
+      ];
+    const nextDaySchedule = orderedSchedule[nextDay];
+
+    // If the day has only one schedule item and the next day exists,
+    //move the first item of the next day to the current day
+    if (daySchedule.length === 1 && nextDaySchedule) {
+      const nextDayFirstSchedule = nextDaySchedule[0];
+      orderedSchedule[day] = [...daySchedule, nextDayFirstSchedule];
+      orderedSchedule[nextDay] = nextDaySchedule.slice(1);
+    }
+  });
+  return orderedSchedule;
 }

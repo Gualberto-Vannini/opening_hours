@@ -118,7 +118,11 @@ Not in scope of the project
 
 Not in scope of the project, jest is available.
 
-
 ## Extra suggestions
 
 Navigate into `src/api/OpeningHours.ts` you can change the route in order to point to a different .json to try a different dataset. Both dataset are hosted on [gist github APIs](https://gist.github.com/Gualberto-Vannini).
+
+
+## Personal Goals
+
+This repository is a partial clone and reuse of my [personal RN template](https://github.com/Gualberto-Vannini/template_RN_2023). My aim is to have a quick and easy way to start new projects using my preferred, adaptable, and scalable structure. I consider this repository a part of my personal development journey, as it allows me to swiftly create new apps whenever I have an idea.

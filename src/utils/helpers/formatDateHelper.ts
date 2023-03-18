@@ -4,7 +4,7 @@ import {
 } from '../../api/OpeningHoursApi/OpeningHoursTypes';
 
 // convert millisec like 36000 to 10 AM
-const convertDate12Clock = (inputValue: number): string => {
+export const convertDate12Clock = (inputValue: number): string => {
   //create a new date obj
   const date = new Date();
   // set the hours, minutes, seconds, and milliseconds of the date object to 0

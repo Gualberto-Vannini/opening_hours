@@ -76,8 +76,20 @@ with M1 machine could happen sever problems connected with rosetta setup. Place 
 - `yarn android`
 
 
-You can always execute both OS from Xcode and Android Studio.
+You can always execute both OS from Xcode and Android Studio. My suggestion is always execute with native IDE in order to see more logs.
 
+## Tests
+![test-suite](https://user-images.githubusercontent.com/22340454/226134003-d4b791a9-0a16-4217-9991-51e243e33410.png)
+
+This project includes tests for three core utility functions on [src/utils/helpers/__tests__/formatDateHelper.ts](https://github.com/Gualberto-Vannini/opening_hours/blob/main/src/utils/helpers/__tests__/formatDateHelper.test.ts) related to formatting opening hours data: `formatOpeningHours, reorderDays, and convertDate12Clock`.
+
+The `formatOpeningHours` function takes an array of DaySchedule objects and returns a string representation of the opening hours, formatted in a human-readable way. The tests for this function check that it can handle various input scenarios, such as empty arrays and multiple pairs of opening hours.
+
+The `reorderDays` function takes an object representing the opening hours for each day of the week, and returns a new object with the days reordered so that they match the order in which they appear in the standard Sunday-Saturday week. The tests for this function check that it correctly reorders the days in the input object.
+
+The `convertDate12Clock` function takes a number representing the number of seconds since midnight, and returns a string representation of the time in 12-hour clock format. The tests for this function check that it correctly converts various input values to the expected output format.
+
+The test file can be executed with `yarn test`
 
 ## Redux
 Once the components are defined, they are tied to the management of information through the application. For this, Redux is implemented with the store-reducer-action structure as usual, however, not only the data is handled through the actions but the success, error and loading responses are also defined by the same form.
@@ -113,10 +125,6 @@ For debugging, we use [React Native Debugger](https://github.com/jhen0409/react-
 ## Generate production version
 
 Not in scope of the project
-
-## Tests
-
-Not in scope of the project, jest is available.
 
 ## Extra suggestions
 

@@ -90,7 +90,7 @@ The `reorderDays` function takes an object representing the opening hours for ea
 
 The `convertDate12Clock` function takes a number representing the number of seconds since midnight, and returns a string representation of the time in 12-hour clock format. The tests for this function check that it correctly converts various input values to the expected output format.
 
-The test file can be executed with `yarn test`
+The test specific file can be executed with `yarn test src/utils/helpers/formatDateHelper.test.ts` or all test can be executed with `yarn test`
 
 ### The custom hook tests
 ![test-suite_2](https://user-images.githubusercontent.com/22340454/226169809-56a1dcb7-eeec-4006-a532-08e86f5ba950.png)
@@ -98,7 +98,7 @@ The test file can be executed with `yarn test`
 includes tests for core hook on [src/hooks/useCurrentDay.ts](https://github.com/Gualberto-Vannini/opening_hours/blob/main/src/hooks/__tests__/useCurrentDay.test.ts) related to checking the current date.
 The `useCurrentDay` hook comes with a simple test suite to ensure that it is returning the correct day of the week and isToday value for the specified checkDay. The test checks for the current day of the week as well as a future day of the week to ensure that the hook is working as expected.
 
-The test file can be executed with `yarn test`
+The test specific file can be executed with `jest src/utils/helpers/__tests__/formatDateHelper.test.ts` or all test can be executed with `yarn test`
 
 ## Redux
 Once the components are defined, they are tied to the management of information through the application. For this, Redux is implemented with the store-reducer-action structure as usual, however, not only the data is handled through the actions but the success, error and loading responses are also defined by the same form.

@@ -78,8 +78,8 @@ with M1 machine could happen sever problems connected with rosetta setup. Place 
 
 You can always execute both OS from Xcode and Android Studio. My suggestion is always execute with native IDE in order to see more logs.
 
-## Tests
-### The utils folder tests
+## Jest Unit Tests
+#### The utils folder tests
 ![test-suite](https://user-images.githubusercontent.com/22340454/226169772-94bb7970-03ee-4bbf-ac43-916d68058a4d.png)
 
 includes tests for three core utility functions on [src/utils/helpers/__tests__/formatDateHelper.ts](https://github.com/Gualberto-Vannini/opening_hours/blob/main/src/utils/helpers/__tests__/formatDateHelper.test.ts) related to formatting opening hours data: `formatOpeningHours, reorderDays, and convertDate12Clock`.
@@ -92,7 +92,7 @@ The `convertDate12Clock` function takes a number representing the number of seco
 
 The test specific file can be executed with `yarn test src/utils/helpers/formatDateHelper.test.ts` or all test can be executed with `yarn test`
 
-### The custom hook tests
+#### The custom hook tests
 ![test-suite_2](https://user-images.githubusercontent.com/22340454/226169809-56a1dcb7-eeec-4006-a532-08e86f5ba950.png)
 
 includes tests for core hook on [src/hooks/useCurrentDay.ts](https://github.com/Gualberto-Vannini/opening_hours/blob/main/src/hooks/__tests__/useCurrentDay.test.ts) related to checking the current date.

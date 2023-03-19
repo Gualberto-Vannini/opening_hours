@@ -81,13 +81,20 @@ You can always execute both OS from Xcode and Android Studio. My suggestion is a
 ## Tests
 ![test-suite](https://user-images.githubusercontent.com/22340454/226134003-d4b791a9-0a16-4217-9991-51e243e33410.png)
 
-This project includes tests for three core utility functions on [src/utils/helpers/__tests__/formatDateHelper.ts](https://github.com/Gualberto-Vannini/opening_hours/blob/main/src/utils/helpers/__tests__/formatDateHelper.test.ts) related to formatting opening hours data: `formatOpeningHours, reorderDays, and convertDate12Clock`.
+### The utils folder tests
+includes tests for three core utility functions on [src/utils/helpers/__tests__/formatDateHelper.ts](https://github.com/Gualberto-Vannini/opening_hours/blob/main/src/utils/helpers/__tests__/formatDateHelper.test.ts) related to formatting opening hours data: `formatOpeningHours, reorderDays, and convertDate12Clock`.
 
 The `formatOpeningHours` function takes an array of DaySchedule objects and returns a string representation of the opening hours, formatted in a human-readable way. The tests for this function check that it can handle various input scenarios, such as empty arrays and multiple pairs of opening hours.
 
 The `reorderDays` function takes an object representing the opening hours for each day of the week, and returns a new object with the days reordered so that they match the order in which they appear in the standard Sunday-Saturday week. The tests for this function check that it correctly reorders the days in the input object.
 
 The `convertDate12Clock` function takes a number representing the number of seconds since midnight, and returns a string representation of the time in 12-hour clock format. The tests for this function check that it correctly converts various input values to the expected output format.
+
+The test file can be executed with `yarn test`
+
+### The custom hook
+includes tests for core hook on [src/hooks/useCurrentDay.ts](https://github.com/Gualberto-Vannini/opening_hours/blob/main/src/hooks/__tests__/useCurrentDay.test.ts) related to checking the current date.
+The `useCurrentDay` hook comes with a simple test suite to ensure that it is returning the correct day of the week and isToday value for the specified checkDay. The test checks for the current day of the week as well as a future day of the week to ensure that the hook is working as expected.
 
 The test file can be executed with `yarn test`
 

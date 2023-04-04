@@ -3,9 +3,10 @@ import OpeningHoursApi from '../../api/OpeningHoursApi/OpeningHours';
 import {ScheduleState} from '../../api/OpeningHoursApi/OpeningHoursTypes';
 import {reorderDays} from '../../utils/helpers/formatDateHelper';
 
-export const loadOpeningHours = createAsyncThunk(
+export const loadOpeningHours = createAsyncThunk<ScheduleState>(
   'openHours/getItems',
   async () => {
+    // errors not handled, thrown ANY as error type
     const response = await OpeningHoursApi.getOpeningHours();
     const newSchedule: ScheduleState = {...response.data};
 
@@ -22,3 +23,4 @@ const asyncOpeningHoursActions = {
 };
 
 export default asyncOpeningHoursActions;
+

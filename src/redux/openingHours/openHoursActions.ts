@@ -6,8 +6,8 @@ import {reorderDays} from '../../utils/helpers/formatDateHelper';
 export const loadOpeningHours = createAsyncThunk<ScheduleState>(
   'openHours/getItems',
   async () => {
-    // errors not handled, thrown ANY as error type
-    const response = await OpeningHoursApi.getOpeningHours();
+    const response: {data: ScheduleState} =
+      await OpeningHoursApi.getOpeningHours();
     const newSchedule: ScheduleState = {...response.data};
 
     // restructure the obj to have open-close in same day
@@ -23,4 +23,3 @@ const asyncOpeningHoursActions = {
 };
 
 export default asyncOpeningHoursActions;
-

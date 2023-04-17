@@ -1,4 +1,3 @@
-import {AxiosResponse} from 'axios';
 import {gistBucketApiAxios} from '../Apis';
 import {ScheduleState} from './OpeningHoursTypes';
 //there are 2 sample data apis
@@ -8,8 +7,10 @@ import {ScheduleState} from './OpeningHoursTypes';
 import {ROUTE_OPENING_HOURS} from './routes';
 
 class OpeningHoursApi {
-  getOpeningHours(): Promise<AxiosResponse<ScheduleState>> {
-    return gistBucketApiAxios.get(ROUTE_OPENING_HOURS);
-  }
+  fetchSchedule = async (): Promise<ScheduleState> => {
+    const response = await gistBucketApiAxios.get(ROUTE_OPENING_HOURS);
+    return response.data;
+  };
 }
+
 export default new OpeningHoursApi();

@@ -21,7 +21,7 @@ const Home = () => {
   );
 
   const memoizedDispatch = useCallback(async () => {
-    dispatch([openHoursActions.loadOpeningHours]);
+    dispatch(openHoursActions.loadOpeningHours());
   }, [dispatch]);
 
   useEffect(() => {

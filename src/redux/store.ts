@@ -11,7 +11,7 @@ import {
   persistStore,
 } from 'redux-persist';
 import autoMergeLevel2 from 'redux-persist/lib/stateReconciler/autoMergeLevel2';
-import {ThunkAction} from 'redux-thunk';
+import thunk, {ThunkAction} from 'redux-thunk';
 
 import rootReducer, {RootState} from './rootReducer';
 
@@ -27,22 +27,12 @@ const persistConfig = {
   timeout: 0, // https://github.com/rt2zz/redux-persist/issues/717
 };
 
-const middleware = [
-  ...getDefaultMiddleware({
-    serializableCheck: {
-      ignoredActions: [FLUSH, REHYDRATE, PAUSE, PERSIST, PURGE, REGISTER],
-      warnAfter: 200,
-    },
-    immutableCheck: {warnAfter: 300},
-  }),
-];
-
 // @ts-ignore
 const persistedReducer = persistReducer(persistConfig, rootReducer);
 
 const store = configureStore({
   reducer: persistedReducer,
-  middleware,
+  middleware: [thunk],
   devTools: __DEV__,
 });
 

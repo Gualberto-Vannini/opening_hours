@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react';
+import React, {useCallback, useEffect} from 'react';
 import {SafeAreaView} from 'react-native';
 import TimeTable from '../../components/Card/TimeTable';
 import loadingSelectors from '../../redux/loading/loadingSelectors';
@@ -16,15 +16,17 @@ const StyledSafeAreaView = styled(SafeAreaView)`
 const Home = () => {
   const dispatch = useDispatch();
 
-  dispatch([openHoursActions.loadOpeningHours]);
-
   const {isLoading: openHoursLoading} = useSelector(
     loadingSelectors.openHoursRequestState,
   );
 
-  useEffect(() => {
+  const memoizedDispatch = useCallback(() => {
     dispatch([openHoursActions.loadOpeningHours]);
   }, [dispatch]);
+
+  useEffect(() => {
+    memoizedDispatch();
+  }, [memoizedDispatch]);
 
   if (openHoursLoading) {
     return <LoadingSpinner visible={openHoursLoading} />;

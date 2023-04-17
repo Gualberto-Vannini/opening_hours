@@ -20,7 +20,7 @@ const Home = () => {
     loadingSelectors.openHoursRequestState,
   );
 
-  const memoizedDispatch = useCallback(() => {
+  const memoizedDispatch = useCallback(async () => {
     dispatch([openHoursActions.loadOpeningHours]);
   }, [dispatch]);
 

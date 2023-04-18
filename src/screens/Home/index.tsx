@@ -3,30 +3,30 @@ import {SafeAreaView} from 'react-native';
 import TimeTable from '../../components/Card/TimeTable';
 import loadingSelectors from '../../redux/loading/loadingSelectors';
 import LoadingSpinner from '../../components/LoadingSpinner/';
-import {useSelector} from 'react-redux';
+import {useDispatch, useSelector} from 'react-redux';
 import {openHoursActions} from '../../redux/openingHours/openHours';
-import useActions from '../../hooks/useActions';
 import styled from 'styled-components/native';
 
 const StyledSafeAreaView = styled(SafeAreaView)`
-  margin: ${({theme}) => theme.space.xl};
+  align-items: center;
+  justify-content: center;
   flex: 1;
 `;
 
 const Home = () => {
-  const [loadOpeningHours] = useActions([openHoursActions.loadOpeningHours]);
+  const dispatch = useDispatch();
 
   const {isLoading: openHoursLoading} = useSelector(
     loadingSelectors.openHoursRequestState,
   );
 
-  const loadOpenHoursData = useCallback(() => {
-    loadOpeningHours();
-  }, [loadOpeningHours]);
+  const memoizedDispatch = useCallback(async () => {
+    dispatch(openHoursActions.loadOpeningHours());
+  }, [dispatch]);
 
   useEffect(() => {
-    loadOpenHoursData();
-  }, [loadOpenHoursData]);
+    memoizedDispatch();
+  }, [memoizedDispatch]);
 
   if (openHoursLoading) {
     return <LoadingSpinner visible={openHoursLoading} />;

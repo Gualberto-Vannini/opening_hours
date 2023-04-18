@@ -4,10 +4,9 @@ import styled from 'styled-components/native';
 import {MediumText} from '../../components/TextContent/';
 
 const StyledSafeAreaView = styled(SafeAreaView)`
-  margin: ${({theme}) => theme.space.xl};
   flex: 1;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
 `;
 
 const Profile = () => {

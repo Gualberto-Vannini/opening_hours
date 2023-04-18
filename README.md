@@ -1,6 +1,11 @@
 # OPENING HOURS
 This project aims to recreate a working structure consuming APIs and creating an opening hours card schedule.
 
+| Iphone 14 Pro | Android Galaxy A10s |
+| --- | --- |
+| <img src="https://user-images.githubusercontent.com/22340454/225926108-07da3906-a9c9-4f28-873c-7278b63ca77d.png" width="200"> | <img src="https://user-images.githubusercontent.com/22340454/225926204-56f80e07-e7ee-4723-b4ce-657efc6edeb0.jpg" width="200">
+
+
 ## Pre requisites
 - [Node.js > 14](https://nodejs.org) and yarn (Recommended: Use [yarn](https://classic.yarnpkg.com/lang/en/docs/install/#mac-stable))
 - [Watchman](https://facebook.github.io/watchman)
@@ -28,6 +33,7 @@ This project aims to recreate a working structure consuming APIs and creating an
 - [styled-system](https://styled-system.com) quickly build custom UI.
 - [react-native-safe-area-context](https://github.com/th3rdwave/react-native-safe-area-context)flexible way to handle safe area.
 - [react-native-rename](https://github.com/junedomingo/react-native-rename)rename easily the project.
+- [react-native-svg](https://github.com/software-mansion/react-native-svg) svg for tab bar icons.
 - [jest](https://facebook.github.io/jest/) for testing.
 
 ## Folder structure
@@ -70,8 +76,29 @@ with M1 machine could happen sever problems connected with rosetta setup. Place 
 - `yarn android`
 
 
-You can always execute both OS from Xcode and Android Studio.
+You can always execute both OS from Xcode and Android Studio. My suggestion is always execute with native IDE in order to see more logs.
 
+## Jest Unit Tests
+#### The utils folder tests
+![test-suite](https://user-images.githubusercontent.com/22340454/226169772-94bb7970-03ee-4bbf-ac43-916d68058a4d.png)
+
+includes tests for three core utility functions on [src/utils/helpers/__tests__/formatDateHelper.ts](https://github.com/Gualberto-Vannini/opening_hours/blob/main/src/utils/helpers/__tests__/formatDateHelper.test.ts) related to formatting opening hours data: `formatOpeningHours, reorderDays, and convertDate12Clock`.
+
+The `formatOpeningHours` function takes an array of DaySchedule objects and returns a string representation of the opening hours, formatted in a human-readable way. The tests for this function check that it can handle various input scenarios, such as empty arrays and multiple pairs of opening hours.
+
+The `reorderDays` function takes an object representing the opening hours for each day of the week, and returns a new object with the days reordered so that they match the order in which they appear in the standard Sunday-Saturday week. The tests for this function check that it correctly reorders the days in the input object.
+
+The `convertDate12Clock` function takes a number representing the number of seconds since midnight, and returns a string representation of the time in 12-hour clock format. The tests for this function check that it correctly converts various input values to the expected output format.
+
+The test specific file can be executed with `yarn test src/utils/helpers/formatDateHelper.test.ts` or all test can be executed with `yarn test`
+
+#### The custom hook tests
+![test-suite_2](https://user-images.githubusercontent.com/22340454/226169809-56a1dcb7-eeec-4006-a532-08e86f5ba950.png)
+
+includes tests for core hook on [src/hooks/useCurrentDay.ts](https://github.com/Gualberto-Vannini/opening_hours/blob/main/src/hooks/__tests__/useCurrentDay.test.ts) related to checking the current date.
+The `useCurrentDay` hook comes with a simple test suite to ensure that it is returning the correct day of the week and isToday value for the specified checkDay. The test checks for the current day of the week as well as a future day of the week to ensure that the hook is working as expected.
+
+The test specific file can be executed with `jest src/utils/helpers/__tests__/formatDateHelper.test.ts` or all test can be executed with `yarn test`
 
 ## Redux
 Once the components are defined, they are tied to the management of information through the application. For this, Redux is implemented with the store-reducer-action structure as usual, however, not only the data is handled through the actions but the success, error and loading responses are also defined by the same form.
@@ -108,11 +135,11 @@ For debugging, we use [React Native Debugger](https://github.com/jhen0409/react-
 
 Not in scope of the project
 
-## Tests
-
-Not in scope of the project, jest is available.
-
-
 ## Extra suggestions
 
 Navigate into `src/api/OpeningHours.ts` you can change the route in order to point to a different .json to try a different dataset. Both dataset are hosted on [gist github APIs](https://gist.github.com/Gualberto-Vannini).
+
+
+## Personal Goals
+
+This repository is a partial clone and reuse of my [personal RN template](https://github.com/Gualberto-Vannini/template_RN_2023). My aim is to have a quick and easy way to start new projects using my preferred, adaptable, and scalable structure. I consider this repository a part of my personal development journey, as it allows me to swiftly create new apps whenever I have an idea.

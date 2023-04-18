@@ -11,10 +11,8 @@ const loadOpeningHours = createAsyncThunk<
   try {
     const response: ScheduleState = await OpeningHoursApi.fetchSchedule();
     const newSchedule: ScheduleState = {...response};
-
     // restructure the obj to have open-close in same day
     const orderedSchedule: ScheduleState = reorderDays(newSchedule);
-
     // Return the updated schedule
     return orderedSchedule;
   } catch (err) {

@@ -1,12 +1,6 @@
 import AsyncStorage from '@react-native-async-storage/async-storage';
-import {Action, configureStore, getDefaultMiddleware} from '@reduxjs/toolkit';
+import {Action, configureStore} from '@reduxjs/toolkit';
 import {
-  FLUSH,
-  PAUSE,
-  PERSIST,
-  PURGE,
-  REGISTER,
-  REHYDRATE,
   persistReducer,
   persistStore,
 } from 'redux-persist';
